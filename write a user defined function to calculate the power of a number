@@ -1,0 +1,23 @@
+#include <stdio.h>
+ void calcPower(double base, double e){
+     double result=1, i;
+     for(  i=1; i<=e; i++){
+         result= result*base;
+         
+     }
+     printf("%lf",result);
+ }
+int main()
+{
+    double base,  e ;
+    printf("enter the base: ");
+    scanf("%lf",&base);
+    printf("enter the exponent: ");
+    scanf("%lf",&e);
+    calcPower(base, e);
+     
+
+    return 0;
+}
+ 
+ 
