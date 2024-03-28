@@ -1,0 +1,21 @@
+#include <stdio.h>
+int countDigit();
+int main() {
+   int n, x;
+  printf("enter input: ");
+  scanf("%d",&n);
+   x= countDigit(n);
+   printf("%d have %d digits", n,x);
+   
+
+    return 0;
+}
+int countDigit(int num){
+    int r,count=0 ;
+    while(num !=0){
+        r= num%10;
+        num= num/10;
+       count++;
+    }
+    return count;
+}
