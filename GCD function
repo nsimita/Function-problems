@@ -19,7 +19,7 @@ int GCD(int x, int y){
          max=y ; min= x;
      }
      while (max%min !=0){
-         int temp = min;
+         int temp = min; // we have to store the min value at temp otherwise this min value will be lost
          min = max% min;
          max = temp;
      }
