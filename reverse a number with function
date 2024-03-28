@@ -1,0 +1,19 @@
+#include <stdio.h>
+int reverse();
+int main() {
+   int x, y;
+   x= 123;
+   y= reverse(x);
+   printf("%d",y);
+
+    return 0;
+}
+int reverse(int num){
+    int r, sum=0;
+    while(num !=0){
+        r= num%10;
+        num= num/10;
+        sum= sum*10+r;
+    }
+    return sum;
+}
