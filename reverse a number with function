@@ -2,7 +2,8 @@
 int reverse();
 int main() {
    int x, y;
-   x= 123;
+  printf("enter input: ");
+  scanf("%d",&x);
    y= reverse(x);
    printf("%d",y);
 
