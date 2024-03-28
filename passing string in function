@@ -1,0 +1,16 @@
+#include <stdio.h>
+void display();
+int main() {
+    char str[]= "yoongi";
+    display(str);
+
+    return 0;
+}
+void display(char s1[]){
+    int i=0;
+    while(s1[i] != '\0'){
+        printf(" %c\n",s1[i]);
+        i++;
+       
+    }
+}
