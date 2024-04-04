@@ -1,0 +1,15 @@
+#include <stdio.h>
+void print(int n){
+if(n==0){
+    return ;
+}
+else {
+    printf("Hello World\n"); // it will print 1 time 
+    print(n-1); // so it will be n-1 
+}
+
+}
+int main(){
+print(5); //printing 5 times
+ return 0;
+}
