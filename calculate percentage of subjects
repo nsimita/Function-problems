@@ -1,0 +1,17 @@
+#include <stdio.h>
+int calcPercnt(int x, int y , int z);
+int main(){
+  int spl, eng, calc;
+  printf("enter spl mark:\n" );
+  scanf("%d",&spl);
+   printf("enter eng mark: \n");
+  scanf("%d",&eng);
+   printf("enter calculus mark: \n");
+  scanf("%d",&calc);
+  printf(" the percentage of subjects is: %d",calcPercnt(spl,eng,calc));
+
+return 0;
+}
+int calcPercnt(int x, int y , int z){
+  return ((x+y+z)/3);
+}
