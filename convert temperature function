@@ -1,0 +1,13 @@
+#include <stdio.h>
+float convtTemp (float cel){
+float far = cel*(9.0/5.0)+32;
+ return far;
+}
+
+int main(){
+ float n;
+ scanf("%f", &n);
+ float far = convtTemp(n);
+ printf("%f",far);
+return 0;
+}
