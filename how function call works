@@ -1,0 +1,12 @@
+#include <stdio.h>
+int abc(int n); //function prototype
+int abc(int n){ //function define
+    return 6; //if main function calls it will return 6
+}
+int main() {
+    int x = abc(5); // calling abc function. for calling abc function, an integer value is needed. 
+    printf("%d",x);
+   
+
+    return 0;
+}
