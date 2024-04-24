@@ -1,0 +1,18 @@
+#include <stdio.h>
+int countDigit(int a);
+int main() {
+ int n;
+ scanf("%d", &n);
+int result = countDigit(n);
+printf("%d", result);
+
+    return 0;
+}
+int countDigit(int a){
+    if(a==0){
+        return 0;
+    }
+    else{
+        return 1+ countDigit(a/10);
+    }
+}
