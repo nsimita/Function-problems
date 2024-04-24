@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int print (int lower, int upper) {
+  if (upper < lower) return; //if upper number is less than lower stop the recursion
+  print (lower, upper - 1); 
+  printf("%d\n", upper);
+}
+
+int main() {
+  int a, b;
+  scanf(" %d %d", &a, &b);
+  print (a, b);
+}
